@@ -31,7 +31,7 @@ You can learn more about the NativeScript core theme at https://github.com/nativ
             </StackLayout>
         </ng-template>
     </ListView>
-    <TextField hint="Enter Name" [(ngModel)]="name_model">
+    <TextField #itemTextField hint="Enter Name" [(ngModel)]="name">
     </TextField>
-    <Button text="Submit" (tap)="onTap($event)"></Button>
+    <Button text="Submit" (tap)="addItem()"></Button>
 </FlexboxLayout>
