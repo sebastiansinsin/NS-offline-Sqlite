@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 import { DatabaseService } from "./services/sqlite.service";
+import { ConnectivityService} from "./services/connectivity.service";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -29,7 +30,7 @@ import { DatabaseService } from "./services/sqlite.service";
         ItemsComponent,
         ItemDetailComponent
     ],
-    providers: [DatabaseService],
+    providers: [DatabaseService,ConnectivityService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]
